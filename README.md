@@ -1,76 +1,49 @@
-# Smart Home Security System Documentation
+# Smart Home Security
 
 ## Overview
-This documentation provides a comprehensive overview of the Smart Home Security System, detailing its components, wiring, setup, and security features.
+This project aims to provide a smart home security system using Arduino and ESP32. The main goal is to implement various features such as remote monitoring and alert notifications.
 
-## Components
-- Cameras
-- Sensors
-- Alarm systems
-- Smart locks
-- Control panel
+## Features
+- Remote Monitoring
+- Alert Notifications
 
-## Wiring Diagrams
-Include wiring diagrams for all components that demonstrate how to connect various parts of the security system.
+## Architecture
+![System Architecture](architecture.png)
 
-## Security Features
-- Motion detection
-- Night vision
-- Remote monitoring
-- Alerts and notifications
-- Integration with smart home devices
+## Code Implementation
+### Arduino/ESP32 Code
+```cpp
+// Example Arduino Code
+void setup() {
+  // Initialization code
+}
 
-## Web Interface Pages
-1. **Dashboard** - Monitor the status of the system.
-2. **Settings** - Configure your security settings.
-3. **Live Feed** - View live camera feeds.
-4. **Logs** - Access event logs.
-
-## API Endpoints
-- `GET /api/status`
-- `POST /api/alerts`
-- `GET /api/logs`
-- `PUT /api/settings`
-
-## Setup Instructions
-1. Unbox all components.
-2. Connect to power.
-3. Configure the central control panel.
-4. Install sensors and cameras as per wiring diagrams.
-5. Connect to the web interface for final configuration.
-
-## Security Recommendations
-- Regularly update system firmware.
-- Use strong, unique passwords for system access.
-- Enable two-factor authentication for access to the web interface.
-
-## Troubleshooting Guide
-- **Issue:** Camera not displaying feed.
-  - **Solution:** Check power connections and network connectivity.
-- **Issue:** Motion sensor not triggering.
-  - **Solution:** Verify sensor placement and sensitivity settings.
-
-## Log Event Types
-- Motion detected
-- Alarm triggered
-- System armed/disarmed
-- Tampering detected
-
-## File Structure
-```
-smart-home-security/
-├── src/
-│   ├── components/
-│   ├── api/
-│   └── utils/
-├── tests/
-└── README.md
+void loop() {
+  // Main code
+}
 ```
 
-## License
-This project is licensed under the MIT License.
+### Additional Code Section
+```python
+# Example Python Code
+def example_function():
+    pass
+```
 
-## Version Information
-Current version: 1.0.0
+## Diagrams
+### System Flow Diagram
+```markdown
+- Start
+- Monitor
+- Alert
+```
 
-Last updated: 2026-04-01 01:14:47 UTC
+### Data Flow Diagram
+```text
+1. Input Data
+2. Process Data
+3. Output Data
+```
+
+## Conclusion
+This project aims to enhance home security using technology and innovation.
