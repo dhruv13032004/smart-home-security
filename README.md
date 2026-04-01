@@ -182,7 +182,8 @@ Edit these lines in the code:
 const char* WIFI_SSID = "YOUR_WIFI_SSID";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
 
-3. Change Default Password
+
+ 3. Change Default Password
 The default password is "admin". Generate a new SHA-256 hash:
 
 echo -n "YourNewPassword" | sha256sum
@@ -235,3 +236,17 @@ Locked out	Wait 5 minutes or restart ESP32
 smart_home_security/
 ├── smart_home_security.ino    # Main code
 └── README.md                  # This file
+
+
+License
+Open source for educational purposes. Use at your own risk.
+
+Version
+v1.0 - Initial Release
+
+-All sensors integrated
+-Full security logging
+-Web-based control panel
+-RFID access control
+
+
