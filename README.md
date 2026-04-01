@@ -1,49 +1,37 @@
-# Smart Home Security
+# Smart Home Security System - ESP32
 
 ## Overview
-This project aims to provide a smart home security system using Arduino and ESP32. The main goal is to implement various features such as remote monitoring and alert notifications.
 
-## Features
-- Remote Monitoring
-- Alert Notifications
+A secure smart home system with comprehensive cybersecurity features including authentication, rate limiting, intrusion detection, and security event logging.
 
-## Architecture
-![System Architecture](architecture.png)
+## Components Used
 
-## Code Implementation
-### Arduino/ESP32 Code
+| Component | Quantity | Purpose |
+|-----------|----------|---------|
+| ESP32 | 1 | Main controller |
+| IR Sensor | 1 | Obstacle/Proximity detection |
+| LDR Sensor | 1 | Light level monitoring |
+| PIR Sensor | 1 | Motion detection (security) |
+| DHT11/22 | 1 | Temperature & Humidity |
+| HC-SR04 Ultrasonic | 1 | Distance/Presence detection |
+| RC522 RFID | 1 | Access control |
+| 4-Channel Relay | 1 | Appliance control |
+| Breadboard | 1 | Prototyping |
+
+## Setup Instructions
+
+### 2. Configure WiFi Credentials
+Edit these lines in the code:
+
 ```cpp
-// Example Arduino Code
-void setup() {
-  // Initialization code
-}
+const char* WIFI_SSID = "YOUR_WIFI_SSID";
+const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
 
-void loop() {
-  // Main code
-}
-```
+echo -n "YourNewPassword" | sha256sum
 
-### Additional Code Section
-```python
-# Example Python Code
-def example_function():
-    pass
-```
+const char* ADMIN_PASSWORD_HASH = "your_new_hash_here";
 
-## Diagrams
-### System Flow Diagram
-```markdown
-- Start
-- Monitor
-- Alert
-```
+smart_home_security/
+├── smart_home_security.ino
+└── README.md
 
-### Data Flow Diagram
-```text
-1. Input Data
-2. Process Data
-3. Output Data
-```
-
-## Conclusion
-This project aims to enhance home security using technology and innovation.
